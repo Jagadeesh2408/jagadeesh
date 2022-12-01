@@ -22,9 +22,8 @@ public class LogIN_Test {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[text()='Login ']")).click();
 		Thread.sleep(2000);
-		
-		
-		Assert.assertEquals(driver.getTitle(), "actiTIME - Enter Time-Track");
+	    Assert.assertEquals(driver.getTitle(), "actiTIME - Enter Time-Track");
+	    driver.close();
 	}
 
 }
